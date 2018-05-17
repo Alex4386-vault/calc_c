@@ -5,20 +5,18 @@
 #include <math.h>
 #include <time.h>
 
+double calcu();
+int tcalcu();
+void scalcu();
+void line();
+
 int main()
 {
 	int select;
 
-	for (int titleloop = 0; titleloop < 50; titleloop++)
-	{
-		printf("-");
-	}
-	printf("\n");
+	line();
 	printf("\t\tCalculator for C\n");
-	for (int titleloop = 0; titleloop < 50; titleloop++)
-	{
-		printf("-");
-	}
+	line();
 	printf("\n");
 	//Select the action (use scanf)
 	while (1)
@@ -36,6 +34,11 @@ int main()
 		}
 		switch (select)
 		{
+		case 1:
+			line();
+			printf("\t\tBasic Operation\n");
+			line();
+			break;
 		default:
 			// Unpresented Choice
 			printf("\n# ERROR : Input value is invalid!\a\n");
@@ -43,6 +46,16 @@ int main()
 			break;
 		}
 	}
+}
+
+void line(void)
+{
+	// make a line 
+	for (int titleloop = 0; titleloop < 50; titleloop++)
+	{
+		printf("-");
+	}
+	printf("\n");
 }
 
 int tcalcu(void)
