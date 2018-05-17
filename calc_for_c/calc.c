@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+// for using scanf (not scanf_s)
 
 #include <stdio.h>
 #include <math.h>
@@ -25,7 +26,8 @@ int main()
 		printf("Select the action to perform!\n");
 		printf("Enter 0 to exit the program.\n\n ");
 		// Sentinel is 0 (using if, break) 
-		printf("1. Basic operation\n 2. A numerical translation \n 3. Unit conversion\n 4. Time operation\n Type : ");
+		printf("1. Basic operation\n 2. A numerical translation \n 3. Unit conversion\n 4. Time operation\n Type : *\b");
+		
 		scanf("%d", &select);
 		if (select == 0)
 		{
@@ -35,7 +37,8 @@ int main()
 		switch (select)
 		{
 		default:
-			printf("Input value is invalid!\a\n");
+			// Unpresented Choice
+			printf("\n# ERROR : Input value is invalid!\a\n");
 			printf("Please select again.\n\n");
 			break;
 		}
