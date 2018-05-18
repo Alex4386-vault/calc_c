@@ -87,15 +87,15 @@ void invaildch(void)
 
 int tcalcu(void)
 {
-	//time source code line
+	//TODO : time source code line
 }
 
 double calcu(void)
 {
-	//basic calculation code line
+	//TODO : basic calculation code line
 }
 
 void scalcu(void)
 {
-	// call ASCII, binary, octal, hexadecimal code line
+	//TODO : call ASCII, binary, octal, hexadecimal code line
 }
